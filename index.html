@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método HR sem mimimi</title>
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        /* Estilos para o carrossel */
+        .carousel {
+            width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+            border-radius: 20px;
+        }
+
+        .carousel img {
+            width: 100%;
+            display: block;
+            border-radius: 20px;
+        }
+
+        .carousel-container {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        /* Estilos para os botões de navegação */
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            border: none;
+            outline: none;
+            z-index: 2;
+        }
+
+        .carousel-button i {
+            font-size: 1.5rem;
+            /* Tamanho do ícone */
+        }
+
+        .prev {
+            left: 0;
+            background: none;
+        }
+
+        .next {
+            right: 0;
+            background: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--inicio header-->
+    <header>
+        <div class="container flex">
+            <div id="img-header-cll">
+                foto
+            </div>
+            <div class="header-txt">
+                <h1>Construindo <span>times de elite</span> para empresários saírem do operacional, enquanto a empresa
+                    continua em
+                    grande crescimento.
+                </h1>
+
+                <a class="btn-header" href="#bio">QUERO TER TIMES DE ELITE</a>
+            </div>
+            <div class="img-header">
+                <img src="img/ela.png" alt="">
+            </div>
+        </div>
+    </header>
+    <!--final header-->
+
+    <!--inico main-->
+    <main>
+
+
+
+        <!--inicio pilares-->
+        <section id="pilares">
+            <div class="container"
+                style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <h2>O Método RH SEM MIMIMI</h2>
+
+                <p>
+                    Para continuar crescendo sua empresa, você precisa de um time que dê conta do recado.
+                </p> <br>
+
+                <p>
+                    Ficar apagando incêndio, corrigindo comportamento e tendo falta de confiança na equipe para tocarem
+                    a
+                    empresa, é única e exclusivamente culpa do processo em que você gere o RH.
+
+                </p> <br>
+
+                <p>
+                    Por isso, meu papel é montar um RH à prova de falhas para você, onde configuramos tudo uma única vez
+                    e o
+                    resto vai funcionar de forma automática:
+                </p>
+
+                <img id="pilar-pc" src="img/pilares.png" alt="" width="100%">
+
+                <div id="pilar-cll">
+                    <img src="img/pilar1.png" alt="">
+                    <img src="img/pilar2.png" alt="">
+                    <img src="img/pilar3.png" alt="">
+                    <img src="img/pilar4.png" alt="">
+
+                </div>
+
+                <!--<a href="#">QUERO O MÉTODO NO MEU NEGÓCIO</a>-->
+
+            </div>
+        </section>
+        <!--final pilares-->
+
+        <!-- inicio depoimentos-->
+        <section id="depoimentos">
+
+            <div class="container">
+                <h2>QUEM CONFIA NO MEU MÉTODO, APROVA</h2>
+                <img id="dep-pc" src="img/depoimentos.png" alt="">
+
+
+                <div id="dep-cll" class="carousel">
+                    <div class="carousel-container">
+                        <img src="img/dp-1.png" alt="Foto 1">
+                        <img src="img/dp-2.png" alt="Foto 2">
+                        <img src="img/dp-3.png" alt="Foto 3">
+                        <img src="img/dp-4.png" alt="Foto 4">
+                        <img src="img/dp-5.png" alt="Foto 5">
+                        <img src="img/dp-6.png" alt="Foto 6">
+                    </div>
+                    <button class="carousel-button prev" onclick="moveSlide(-1)">
+                        <i style="color: black;" class="bi bi-chevron-left"></i> <!-- Ícone de seta para a esquerda -->
+                    </button>
+                    <button class="carousel-button next" onclick="moveSlide(1)">
+                        <i style="color: black;" class="bi bi-chevron-right"></i> <!-- Ícone de seta para a direita -->
+                    </button>
+                </div>
+
+
+            </div>
+        </section>
+        <!--final depoimentos-->
+
+        <!--inicio bio-->
+        <section id="bio">
+            <div class="container flex">
+                <h2 id="title-cll">MUITO PRAZER, ME CHAMO MICHELLE</h2>
+                <div class="img-bio">
+                    <img src="img/bio.jpg" alt="">
+                </div>
+
+
+                <div class="text-bio">
+                    <h2 id="title-pc">MUITO PRAZER, ME CHAMO MICHELLE</h2>
+                    <p>Apaixonada pela história das pessoas, por Harley Davidson, dança e culinária, Michelle é
+                        empresária e fundadora da Consultoria Contato e defende a ideia de RH SEM MIMIMI. Tem criado
+                        conteúdos de gestão ágil, mostrando o que é ser e fazer RH de forma eficaz, rápida e direta,
+                        sem
+                        mimimi.
+
+                    </p> <br>
+
+                    <p>É Psicóloga, formada pela Universidade Federal de SC.
+                    </p> <br>
+
+                    <p>Possui 3 pós graduações e diversos cursos e certificações internacionais, mas acredita que o
+                        que
+                        a tornou a profissional que é hoje foram as experiências e as pessoas que tem ao redor. Para
+                        ela,
+                        empreender é uma série de ações orgânicas, naturais e apaixonantes. </p> <br>
+
+                    <p>
+                        Atua há mais de 19 anos na área de gestão de pessoas.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+        <!--fim da bio-->
+
+
+        <!--inicio section publico-->
+        <section id="publico">
+            <div class="sub-publico">
+                <h2>PARA QUEM É?</h2>
+                <p class="sub-titulo">Você precisa ter no mínimo 10 funcionários</p>
+            </div>
+            <div class="container">
+
+                <div class="list">
+                    <i class="bi bi-check-square"></i>
+                    <p>
+                        <span class="bold">Empresário que deseja</span> sair do operacional e ver um time gerenciado de
+                        forma autônoma
+                    </p>
+                </div>
+
+                <div class="list">
+                    <i class="bi bi-check-square"></i>
+                    <p>
+                        <span class="bold">Empresário que deseja</span> continuar crescendo, com equipe em que possa
+                        confiar
+                    </p>
+                </div>
+
+                <div class="list">
+                    <i class="bi bi-check-square"></i>
+                    <p>
+                        <span class="bold">Empresário que deseja</span> contratar pessoas qualificadas para a equipe e
+                        nunca
+                        mais se preocupar com os
+                        talentos
+                    </p>
+                </div>
+
+                <div class="list">
+                    <i class="bi bi-check-square"></i>
+                    <p>
+                        <span class="bold">Empresário que deseja</span> ter o papel de líder estratégico e parar de
+                        perder
+                        tempo (re)fazendo trabalho
+                        da equipe
+                    </p>
+                </div>
+
+                <div class="list">
+                    <i class="bi bi-check-square"></i>
+                    <p>
+                        <span class="bold">Empresário que deseja</span> crescer exponencialmente ainda em 2024,
+                        eliminando
+                        qualquer tipo de problema
+                        com o time ou a empresa.
+                    </p>
+                </div>
+
+                <div class="list">
+                    <i class="bi bi-check-square"></i>
+                    <p>
+                        <span class="bold">Empresário que deseja</span> sair do operacional e ver um time gerenciado de
+                        forma autônoma
+                    </p>
+                </div>
+
+                <br><br>
+
+                <h2>Após a implementação, prepare-se para:</h2>
+
+                <div class="list">
+                    <i class="bi bi-check-square"></i>
+                    <p>
+                        Ser mais respeitado
+                    </p>
+                </div>
+
+                <div class="list">
+                    <i class="bi bi-check-square"></i>
+                    <p>
+                        Ter o controle da sua empresa
+                    </p>
+                </div>
+
+                <div class="list">
+                    <i class="bi bi-check-square"></i>
+                    <p>
+                        Automatizar seu tempo e ver tudo funcionando
+                    </p>
+                </div>
+
+                <div class="list">
+                    <i class="bi bi-check-square"></i>
+                    <p>
+                        Receber (muito bem) para ser estratégico e menos operacional
+                    </p>
+                </div>
+
+                <div class="list">
+                    <i class="bi bi-check-square"></i>
+                    <p>
+                        Gerar uma empresa com receita recorrente e se tornar referência
+                    </p>
+                </div>
+
+                <a href="">QUERO TER TIMES DE ELITE</a>
+
+            </div>
+        </section>
+        <!--final section publico-->
+
+
+    </main>
+    <!--final main-->
+
+
+    <!--inicio footer-->
+    <footer>
+        <div class="container">
+            <p style="text-align: center; padding: 30px;">&copy; Michele 2024 todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <!--final footer-->
+
+
+
+    <script>
+
+        // JavaScript para controlar o carrossel
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.carousel img');
+        const totalSlides = slides.length;
+
+        function moveSlide(direction) {
+            currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+            updateCarousel();
+        }
+
+        function updateCarousel() {
+            const offset = -currentIndex * 100;
+            document.querySelector('.carousel-container').style.transform = `translateX(${offset}%)`;
+        }
+    </script>
+</body>
+
+</html>
